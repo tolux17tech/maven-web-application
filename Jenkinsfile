@@ -55,7 +55,7 @@ pipeline{
                         [
                             artifactId: "${readPomVersion.artifactId}", 
                         classifier: '', 
-                        file: 'target/ToluxBuild.war', 
+                        file: 'target/Toluxbuild.war', 
                         type: 'war']
                         ], 
                         credentialsId: 'Nexus2-login', 
