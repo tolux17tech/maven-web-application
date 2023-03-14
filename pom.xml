@@ -5,7 +5,7 @@
 	<groupId>com.mt</groupId>
 	<artifactId>maven-web-application</artifactId>
 	<packaging>war</packaging>
-	<version>0.0.1</version>
+	<version>0.0.1-SNAPSHOT</version>
 	
 	<name>visa-web-application</name>
 
@@ -21,23 +21,13 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://45.79.185.180:9000/</sonar.host.url>
-		<sonar.login>13dece017e0d4d4e449e542de16abbb5dd2a8814</sonar.login>
+		<sonar.host.url>http://localhost:9000/</sonar.host.url>
+		<sonar.login>squ_9757263b3850cb72c6f93eed5b4eb26e324ce5e2</sonar.login>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 	</properties>
 
-         
-	 <repositories>
-
-            <repository>
-              <id>nexus</id>
-              <name>Landmark Technologies Releases Nexus Repository</name>
-              <url>http://104.237.146.187:8081/repository/tesla-proxy</url>
-            </repository>
-
-        </repositories>
 
 	<dependencies>
 		
@@ -103,24 +93,9 @@
 		
 	</dependencies>
 	
-	<distributionManagement>
 	
-            
-	    <repository>
-	      <id>nexus</id>
-	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://104.237.146.187:8081/repository/tesla-release/</url>
-	    </repository>
-	    
-	    <snapshotRepository>
-	      <id>nexus</id>
-	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://104.237.146.187:8081/repository/tesla-snapshots</url>
-	    </snapshotRepository>
-	    
-	</distributionManagement>
 	<build>
-		<finalName>Tolux-Build</finalName>
+		<finalName>Toluxbuild</finalName>
 		
 		<plugins>
 			<plugin>
