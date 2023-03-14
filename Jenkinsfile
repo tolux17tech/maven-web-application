@@ -7,7 +7,7 @@ pipeline{
         
         stage('Git Checkout'){
             steps{
-               git branch: 'main', url: 'https://github.com/tolux17tech/demo-counter-app.git' 
+               git branch: 'main', url: 'https://github.com/tolux17tech/maven-web-application.git' 
             }
         }
 
