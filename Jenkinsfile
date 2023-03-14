@@ -49,14 +49,14 @@ pipeline{
                 script{
                     def readPomVersion = readMavenPom file:'pom.xml'
 
-                    def nexusRepo = readPomVersion.version.endsWith("SNAPSHOT") ? "counter-app-snapshot": "counter-app-release"
+                    def nexusRepo = readPomVersion.version.endsWith("SNAPSHOT") ? "maven-repo-snapshot": "maven-repo-release"
                     
                     nexusArtifactUploader artifacts: [
                         [
                             artifactId: "${readPomVersion.artifactId}", 
                         classifier: '', 
-                        file: 'target/Uber.jar', 
-                        type: 'jar']
+                        file: 'target/ToluxBuild.war', 
+                        type: 'war']
                         ], 
                         credentialsId: 'Nexus2-login', 
                         groupId: "${readPomVersion.groupId}", 
