@@ -60,7 +60,7 @@ pipeline{
                         ], 
                         credentialsId: 'Nexus2-login', 
                         groupId: "${readPomVersion.groupId}", 
-                        nexusUrl: '172.21.0.4:8081/nexus', 
+                        nexusUrl: '172.21.0.2:8081/nexus', 
                         nexusVersion: 'nexus2', 
                         protocol: 'http', 
                         repository: nexusRepo, 
